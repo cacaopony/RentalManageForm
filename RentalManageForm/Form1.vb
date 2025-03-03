@@ -17,7 +17,7 @@ Public Class Form1
             & "Password=" & User_Pw & ";"
 
         Dim Sql As String =
-            "SELECT sakila.customer.first_name, sakila.customer.last_name, sakila.film.title, sakila.rental.rental_date, sakila.customer.email " _
+            "SELECT sakila.rental.rental_id, sakila.customer.first_name, sakila.customer.last_name, sakila.film.title, sakila.rental.rental_date, sakila.rental.return_date, sakila.customer.email " _
             & "FROM sakila.rental " _
             & "inner join sakila.customer " _
             & "ON sakila.rental.customer_id = sakila.customer.customer_id " _
